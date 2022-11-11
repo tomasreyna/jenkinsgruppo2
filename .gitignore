@@ -45,3 +45,4 @@ target/
 /.repository
 .flattened-pom.xml
 /.classpath
+/.metadata/
