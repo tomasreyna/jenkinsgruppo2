@@ -1,11 +1,6 @@
 pipeline {
 	agent any
-	
-	triggers {
-	
-        cron('H/15 * * * *')
-    
-    }
+
 	stages {
 		stage('Compile Stage'){
 		
@@ -19,7 +14,7 @@ pipeline {
 		stage('Testing Stage'){
 		
 			steps{
-				withMaven(maven:'maven_3_5_0'){
+				withMaven(maven: 'maven_3_5_0'){
 					sh 'mvn test'
 				}
 			}
