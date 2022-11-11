@@ -18,6 +18,8 @@ public class jenkinsgruppo2test {
 	public void setup()	{
 		fb=new FizzBuzz();
 		
+	//commento 
+		
 	}
 	
 	@DisplayName("Play FizzBuzz with number=1")
