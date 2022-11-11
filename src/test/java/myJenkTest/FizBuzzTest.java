@@ -1,7 +1,12 @@
-package jenkinsgruppo2;
+package myJenkTest;
 import org.junit.jupiter.api.*;
-import myJenkTest.tutorial.FizzBuzz;
+import org.junit.rules.ExpectedException;
 
+import myJenkTest.tutorial.FizzBuzz;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.InputMismatchException;
+import java.awt.AWTException;
 
 public class FizBuzzTest {
 	public FizzBuzz fb;
