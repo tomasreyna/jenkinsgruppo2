@@ -6,7 +6,7 @@ import java.util.InputMismatchException;
 import org.junit.Rule;
 import org.junit.jupiter.api.*;
 import org.junit.rules.ExpectedException;
-
+import org.junit.jupiter.api.BeforeEach;
 import myJenkTest.tutorial.FizzBuzz;
 
 
