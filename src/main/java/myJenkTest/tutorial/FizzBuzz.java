@@ -2,6 +2,7 @@ package myJenkTest.tutorial;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
 public class FizzBuzz {
 	 public String play(int number) {
 		 
