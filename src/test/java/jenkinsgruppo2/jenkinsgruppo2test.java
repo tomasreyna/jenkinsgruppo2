@@ -41,14 +41,6 @@ public class jenkinsgruppo2test {
 			
 		}
 		
-		@DisplayName("Play FizzBuzz with number=1")
-		@Test
-		public void testNumber2() {
-			String risultato=fb.play(1);
-			//assertEquals(risultatoOttenuto, risultatoPianificato)
-			Assertions.assertEquals(risultato, "5");
-			
-		}
 	
 
 		@DisplayName("Play FizzBuzz with number=1")
