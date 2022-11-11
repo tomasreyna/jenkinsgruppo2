@@ -40,8 +40,7 @@ public class jenkinsgruppo2test {
 			Assertions.assertEquals(risultato, "Buzz");
 			
 		}
-		
-	
+
 
 		@DisplayName("Play FizzBuzz with number=1")
 		@Test
