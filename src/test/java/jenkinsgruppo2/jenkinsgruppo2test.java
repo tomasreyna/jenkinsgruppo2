@@ -1,9 +1,14 @@
 package jenkinsgruppo2;
 
 
-import org.junit.jupiter.api.*;
+import java.util.InputMismatchException;
 
-import jenkinsgruppo2.esercizio.FizzBuzz;
+import org.junit.Rule;
+import org.junit.jupiter.api.*;
+import org.junit.rules.ExpectedException;
+
+import myJenkTest.tutorial.FizzBuzz;
+
 
 public class jenkinsgruppo2test {
 	
@@ -50,5 +55,26 @@ public class jenkinsgruppo2test {
 			Assertions.assertEquals(risultato, "Number must not be 0");
 			
 		}
-	
-}
+
+		@DisplayName("Play FizzBuzz with number=1")
+		@Test
+		public void testNumber4() {
+			int tastiera = 0;
+			String risultato=fb.play(tastiera);
+			//assertEquals(risultatoOttenuto, risultatoPianificato)
+			Assertions.assertEquals(risultato, "risultato");
+			
+		}
+		
+		@Rule
+	    public ExpectedException thrown = ExpectedException.none();    
+	    @Test
+	    public void testFooThrowsIndexOutOfBoundsException() {
+	        thrown.expect(InputMismatchException.class);
+	        thrown.expectMessage("ti ho detto di inserire un intero!");
+	        fb.play("Ciao");
+	    }
+		
+		}
+
+
